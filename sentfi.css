@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap");
+
+* {
+	color: white;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 600;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--green-color: #88e900;
+}
+
+body {
+	background: #100420;
+	overflow-x: hidden;
+}
+.senthead {
+	display: block;
+	backdrop-filter: blur(15px);
+	height: 3.8em;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+header {
+	position: fixed;
+	padding-top: 0.8rem;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between; /* will change to space-around when doing media queries for laptop view */
+	align-items: center;
+	position: relative;
+}
+.logo img {
+	width: 120px;
+	padding-left: 1rem;
+}
+
+.head-button {
+	padding-right: 1em;
+}
+
+.head-button button {
+	font-size: 10.44px;
+	background-color: transparent;
+	border: 1px solid var(--green-color);
+	border-radius: 15px;
+	width: 96px;
+	height: 37.88px;
+}
+
+#backlight-1 {
+	width: 586px;
+	height: 564px;
+	opacity: 0.2;
+	filter: blur(110px);
+}
+
+.purple-icon img {
+	position: relative;
+	z-index: 1;
+	/* width: 100px; */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.purple {
+	width: 100px;
+}
+.line {
+	position: absolute;
+	top: -2rem;
+	left: -1em;
+	width: 70px;
+	z-index: 2;
+	transform: rotate(310.39deg);
+}
+
+.main-text{
+	font-size: 1.65rem;
+}
+
+.gradient-text {
+	background: -webkit-linear-gradient(#ebdbff, #8833f4);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.green-text{
+	color: var(--green-color);
+}
