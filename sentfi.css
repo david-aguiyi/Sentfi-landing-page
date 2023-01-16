@@ -18,22 +18,26 @@ body {
 	background: #100420;
 	overflow-x: hidden;
 }
+
 .senthead {
-	display: block;
+	width: 100%;
 	backdrop-filter: blur(15px);
-	height: 3.8em;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+	position: fixed;
+	height: 3.6em;
 }
 
 header {
-	position: fixed;
 	padding-top: 0.8rem;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-between; /* will change to space-around when doing media queries for laptop view */
 	align-items: center;
-	position: relative;
+}
+
+.logo {
+	display: block;
 }
 .logo img {
 	width: 120px;
@@ -41,6 +45,7 @@ header {
 }
 
 .head-button {
+	/* margin-right: -16em; */
 	padding-right: 1em;
 }
 
@@ -80,8 +85,9 @@ header {
 	transform: rotate(310.39deg);
 }
 
-.main-text{
+.main-text {
 	font-size: 1.65rem;
+	text-align: center;
 }
 
 .gradient-text {
@@ -90,6 +96,6 @@ header {
 	-webkit-text-fill-color: transparent;
 }
 
-.green-text{
+.green-text {
 	color: var(--green-color);
 }
