@@ -21,7 +21,7 @@ body {
 	position: fixed;
 	height: 3.6em;
 	z-index: 3;
-	width: 86%;
+	width: 100%;
 }
 
 header {
@@ -159,7 +159,11 @@ main {
 .main-button {
 	padding-top: 2em;
 	position: relative;
-left: 18%;
+}
+
+.main-button button{
+	margin-left: 7em;
+	margin-right: -5.5em;
 }
 
 .main-button button.launch {
