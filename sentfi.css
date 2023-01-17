@@ -19,7 +19,7 @@ body {
 	backdrop-filter: blur(15px);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.14);
 	position: fixed;
-	height: 3.6em;
+	height: 4em;
 	z-index: 3;
 	width: 100%;
 }
@@ -38,7 +38,7 @@ header {
 	display: block;
 }
 .logo img {
-	width: 120px;
+	width: 150px;
 	padding-left: 1rem;
 }
 
@@ -120,8 +120,8 @@ main {
 }
 
 /* transform: rotate(9.39deg); */
-.section-1 {
-	z-index: 2;
+#section-1 {
+	margin-top: 3em;
 }
 
 .hero-bg {
@@ -164,6 +164,7 @@ main {
 .main-button button{
 	margin-left: 7em;
 	margin-right: -5.5em;
+	border-radius: 12px;
 }
 
 .main-button button.launch {
@@ -196,3 +197,24 @@ z-index: -1;
 	width: 70px;
 	animation: bounce 9s infinite;
 }
+
+
+.hero-3-4{
+	margin-top: 3em;
+	display: flex;
+
+	align-items: center;
+	justify-content: space-around;
+}
+.hero-buy{
+	width: 120px;
+}
+
+.hero-sell{
+	width: 120px;
+}
+
+.hero-line{
+	width: 30px;
+}
+
