@@ -68,6 +68,18 @@ header {
 	filter: blur(40px);
 }
 
+#backlight-2 {
+	background: #5822f4;
+	display: block;
+	position: absolute;
+	width: 200px;
+	z-index: -1;
+	bottom: -2%;
+	height: 200px;
+	opacity: 0.2;
+	filter: blur(60px);
+}
+
 .purple-icon img {
 	width: 70px;
 	top: 2em;
@@ -154,14 +166,14 @@ main {
 	width: 86%;
 	display: block;
 	margin: 0 auto;
-} 
+}
 
 .main-button {
 	padding-top: 2em;
 	position: relative;
 }
 
-.main-button button{
+.main-button button {
 	margin-left: 7em;
 	margin-right: -5.5em;
 	border-radius: 12px;
@@ -173,7 +185,7 @@ main {
 	color: black;
 }
 
-.docs{
+.docs {
 	font-weight: 900 !important;
 	margin-left: 1em;
 }
@@ -186,35 +198,32 @@ button {
 	height: 37.88px;
 }
 
-.hero-orange{
+.hero-orange {
 	position: absolute;
-top: 19em;
-left: 14.5em;
-z-index: -1;
+	top: 23em;
+	left: 15.5em;
+	z-index: -1;
 }
 
-.hero-orange img{
+.hero-orange img {
 	width: 70px;
 	animation: bounce 9s infinite;
 }
 
-
-.hero-3-4{
-	margin-top: 3em;
+.hero-3-4 {
+	margin-top: 4em;
 	display: flex;
-
 	align-items: center;
 	justify-content: space-around;
 }
-.hero-buy{
-	width: 120px;
+.hero-buy {
+	width: 140px;
 }
 
-.hero-sell{
-	width: 120px;
+.hero-sell {
+	width: 140px;
 }
 
-.hero-line{
-	width: 30px;
+.hero-line {
+	width: 40px;
 }
-
