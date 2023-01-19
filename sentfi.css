@@ -11,7 +11,7 @@
 }
 
 body {
-	overflow: hidden;
+	overflow-x: hidden;
 	background: #100420;
 }
 
@@ -133,7 +133,7 @@ main {
 
 /* transform: rotate(9.39deg); */
 #section-1 {
-	margin-top: 3em;
+	margin-top: 2em;
 }
 
 .hero-bg {
@@ -200,7 +200,7 @@ button {
 
 .hero-orange {
 	position: absolute;
-	top: 23em;
+	top: 22em;
 	left: 15.5em;
 	z-index: -1;
 }
@@ -217,13 +217,82 @@ button {
 	justify-content: space-around;
 }
 .hero-buy {
-	width: 140px;
+	width: 160px;
+	padding-top: 0.6rem;
+	margin-left: -0.9rem;
 }
 
 .hero-sell {
-	width: 140px;
+	width: 148px;
+	padding-top: 7px;
 }
 
 .hero-line {
 	width: 40px;
+}
+
+.section-2::before,
+.section-2::after {
+	content: "";
+	position: absolute;
+	margin-top: 3em;
+	width: 20%;
+	height: 20%;
+	border: 2px solid #a45dff;
+}
+
+.section-2::before {
+	right: 0;
+	left: 3%;
+	border-right: none;
+	border-bottom: none;
+}
+
+.section-2::after {
+	right: 3%;
+	border-left: none;
+	border-top: none;
+	bottom: -11px;
+}
+
+.section-2 {
+	position: relative;
+}
+.section-2 .features {
+	font-family: "Inter";
+	margin: 4em 1.2em;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+	justify-content: space-around;
+}
+
+.features h4 {
+	font-size: 1.15rem;
+}
+
+.features img {
+	width: 100px;
+}
+
+.features p {
+	color: #ffffffa6;
+	font-size: 0.9rem;
+	font-weight: 500;
+	max-width: 340px;
+	margin-top: -2em;
+}
+
+.features .p2p {
+	width: 89%;
+}
+
+.features .rug {
+	width: 96%;
+}
+
+.features .holders {
+	width: 94%;
 }

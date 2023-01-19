@@ -5,7 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="sentfi.css" />
-		<link rel="shortcut icon" href="images/faviconChange.js.download" />		<title>Sentfi Landing page</title>
+		<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+		<link rel="shortcut icon" href="images/faviconChange.js.download" />
+		<script src="sentfi.js"></script>
+		<title>Sentfi Landing page</title>
 	</head>
 	<body>
 		<div class="senthead">
@@ -29,7 +32,7 @@
 				</div>
 				<div class="main-text">
 					<div class="text-1">
-				 		<h1 class="bold-text">
+						<h1 class="bold-text">
 							New world of commerce and Finance,
 							<span class="gradient-text">Never buy or </span>
 							<span class="green-text">sell anything</span> without us.
@@ -48,15 +51,52 @@
 					<button class="docs">Read Docs</button>
 				</div>
 				<div class="hero-orange">
-
 					<img src="images/orange-half.png" class="orange" alt="" />
 				</div>
 
 				<div class="hero-3-4">
 					<div id="backlight-2"></div>
-					<img src="images/buyer.png" class="hero-buy" alt="buyer">
-					<img src="images/lines.png" class="hero-line" alt="line">
-					<img src="images/seller.png" class="hero-sell" alt="seller">
+					<img
+						data-aos="fade-right"
+						src="images/buyer.png"
+						class="hero-buy"
+						alt="buyer"
+					/>
+					<img src="images/lines.png" class="hero-line" alt="line" />
+					<img
+						data-aos="fade-left"
+						src="images/seller.png"
+						class="hero-sell"
+						alt="seller"
+					/>
+				</div>
+			</section>
+			<section class="section-2">
+				<div class="features">
+					<div class="before"></div>
+					<div class="after"></div>
+					<h1>What our system is built for</h1>
+					<img class="hero-p2p" src="images/icon-1.svg" alt="p2p" />
+					<h4>Peer to Peer Commerce</h4>
+					<p class="p2p">
+						We protect buyers and service providers by ensuring terms and
+						conditions are completely met before settlement.
+					</p>
+					<img class="hero-rug" src="images/icon-2.svg" alt="" />
+					<h4>Anti Rug-Pull Services</h4>
+					<p class="rug">
+						We protect investors by moderating project launches, we do this by
+						escrowing funds and releasing funds as project achieve their
+						milestones, this is 100% decided by their community. We refund
+						holders if projects fail to deliver as planned.
+					</p>
+					<img src="images/icon-3.svg" alt="" class="hero-holders" />
+					<h4>NFT holders</h4>
+					<p class="holders">
+						Back your transactions with your NFTs, instead of holding down your
+						funds, only pay when order is confirmed. Get loans using your NFTs
+						as collateral.
+					</p>
 				</div>
 			</section>
 		</main>
