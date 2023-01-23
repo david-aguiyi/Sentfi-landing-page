@@ -82,7 +82,7 @@ header {
 
 .purple-icon img {
 	width: 70px;
-	top: 2em;
+	top: 4em;
 	position: relative;
 	animation: bounce 9s infinite;
 }
@@ -116,7 +116,7 @@ img.line {
 
 main {
 	display: block;
-	padding-top: 2em;
+	padding-top: 1em;
 	margin: 0 auto;
 }
 
@@ -124,11 +124,13 @@ main {
 	/* width: 23rem; */
 	position: relative;
 	font-family: "Inter";
-	font-size: 1em;
+	font-size: 1.1em;
 	font-weight: 900;
 	line-height: 30px;
 	letter-spacing: 0.02em;
-	text-align: center;
+	/* text-align: left; */
+	margin: 0 auto;
+	padding: 1.5em;
 }
 
 /* transform: rotate(9.39deg); */
@@ -162,8 +164,8 @@ main {
 	font-weight: 400;
 	line-height: 25px;
 	letter-spacing: 0em;
-	text-align: center;
-	width: 86%;
+	text-align: left;
+	/* width: 86%; */
 	display: block;
 	margin: 0 auto;
 }
@@ -200,7 +202,7 @@ button {
 
 .hero-orange {
 	position: absolute;
-	top: 22em;
+	top: 25em;
 	left: 15.5em;
 	z-index: -1;
 }
@@ -257,31 +259,37 @@ button {
 
 .section-2 {
 	position: relative;
+	
 }
 .section-2 .features {
 	font-family: "Inter";
-	margin: 4em 1.2em;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
+	margin-left: 1.5em;
+	text-align: left;
+	display: grid;
+	/* flex-direction: column; */
 	align-items: center;
-	gap: 40px;
-	justify-content: space-around;
+	gap: 50px;
+	justify-content: start;
 }
 
 .features h4 {
 	font-size: 1.15rem;
+	text-align: left;
 }
 
 .features img {
 	width: 100px;
+	display: block;
+	margin-top: 1em;
+	margin-bottom: -0.5em;
+	
 }
 
 .features p {
 	color: #ffffffa6;
 	font-size: 0.9rem;
 	font-weight: 500;
-	max-width: 340px;
+	/* max-width: 340px; */
 	margin-top: -2em;
 }
 
@@ -295,4 +303,15 @@ button {
 
 .features .holders {
 	width: 94%;
+}
+
+
+img.commerce{
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4em;
 }
