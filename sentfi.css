@@ -60,24 +60,35 @@ header {
 	background: #5822f4;
 	display: block;
 	position: absolute;
-	width: 200px;
+	width: 300px;
 	z-index: -1;
 	top: -2%;
-	height: 200px;
+	height: 300px;
 	opacity: 0.2;
-	filter: blur(40px);
+	filter: blur(70px);
 }
 
 #backlight-2 {
 	background: #5822f4;
 	display: block;
 	position: absolute;
-	width: 200px;
+	width: 300px;
 	z-index: -1;
-	bottom: -2%;
-	height: 200px;
+	height: 300px;
 	opacity: 0.2;
-	filter: blur(60px);
+	filter: blur(90px);
+}
+
+#backlight-3 {
+	background: #5822f4;
+	display: block;
+	position: absolute;
+	width: 600px;
+	z-index: -1;
+	/* bottom: -5%; */
+	height: 500px;
+	opacity: 0.2;
+	filter: blur(250px);
 }
 
 .purple-icon img {
@@ -130,7 +141,7 @@ main {
 	letter-spacing: 0.02em;
 	/* text-align: left; */
 	margin: 0 auto;
-	padding: 1.5em;
+	padding: 1em;
 }
 
 /* transform: rotate(9.39deg); */
@@ -172,12 +183,11 @@ main {
 
 .main-button {
 	padding-top: 2em;
-	position: relative;
+	display: flex;
+	justify-content: center;
 }
 
 .main-button button {
-	margin-left: 7em;
-	margin-right: -5.5em;
 	border-radius: 12px;
 }
 
@@ -190,6 +200,7 @@ main {
 .docs {
 	font-weight: 900 !important;
 	margin-left: 1em;
+	position: relative;
 }
 button {
 	font-size: 11.4px;
@@ -202,8 +213,8 @@ button {
 
 .hero-orange {
 	position: absolute;
-	top: 25em;
-	left: 15.5em;
+	top: 0em;
+	left: 4em;
 	z-index: -1;
 }
 
@@ -214,19 +225,23 @@ button {
 
 .hero-3-4 {
 	margin-top: 4em;
+	max-width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 }
+
 .hero-buy {
 	width: 160px;
 	padding-top: 0.6rem;
 	margin-left: -0.9rem;
+	max-width: 200px;
 }
 
 .hero-sell {
 	width: 148px;
 	padding-top: 7px;
+	max-width: 200px;
 }
 
 .hero-line {
@@ -259,7 +274,6 @@ button {
 
 .section-2 {
 	position: relative;
-	
 }
 .section-2 .features {
 	font-family: "Inter";
@@ -282,7 +296,6 @@ button {
 	display: block;
 	margin-top: 1em;
 	margin-bottom: -0.5em;
-	
 }
 
 .features p {
@@ -305,9 +318,9 @@ button {
 	width: 94%;
 }
 
-
-img.commerce{
+img.commerce {
 	max-width: 100%;
+	width: 95%;
 	display: flex;
 	justify-content: center;
 	display: block;
