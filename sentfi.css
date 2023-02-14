@@ -411,3 +411,59 @@ hr.section-line{
     border-bottom: 1px solid #ffffff24;
 }
 
+.card{
+	display: block;
+	margin: 0 auto;
+	max-width: 650px;
+	width: 100%;
+	margin-top: 4em;
+	font-family: 'Inter';
+}
+
+.card-body{
+	height: 25em;
+	padding: 0 2em;
+	padding-top: 2em;
+	background-color: #6923FF;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+}
+
+.card-title p{
+	color: var(--green-color);
+	font-weight: 700;
+}
+
+.card-text .p1{
+	font-weight: 900;
+font-size: 1.7rem;
+line-height: 1.5em;
+margin-top: 1em;
+}
+
+.card-text .p3{
+	font-size: 0.9rem;
+	margin-top: 1em;
+	line-height: 1.5em;
+	font-weight: 500;
+}
+
+.card-button button{
+	border-radius: 17px;
+	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+	width: 120px;
+	height: 47px;
+	font-size: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	text-align: center;
+	background-color: var(--green-color);
+}
