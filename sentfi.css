@@ -24,6 +24,10 @@ body {
 	width: 100%;
 }
 
+.smaller{
+	height: 7em;
+}
+
 header {
 	padding-top: 0.8rem;
 	display: flex;
@@ -79,7 +83,7 @@ header {
 	filter: blur(90px);
 }
 
-#backlight-3 {
+#backlight-3, #backlight-4 {
 	background: #5822f4;
 	display: block;
 	position: absolute;
@@ -88,13 +92,14 @@ header {
 	/* bottom: -5%; */
 	height: 500px;
 	opacity: 0.2;
-	filter: blur(250px);
+	filter: blur(220px);
 }
 
 .purple-icon img {
-	width: 70px;
+	width: 90px;
 	top: 4em;
 	position: relative;
+	left: -1em;
 	animation: bounce 9s infinite;
 }
 
@@ -318,7 +323,7 @@ button {
 	width: 94%;
 }
 
-img.commerce {
+img.commerce, img.nft, img.smart, img.exchange{
 	max-width: 100%;
 	width: 95%;
 	display: flex;
@@ -329,33 +334,40 @@ img.commerce {
 	margin-top: 4em;
 }
 
-.p2p-loans {
+.p2p-loans, .nft-insur, .smart, .commerce, .exchange{
 	padding: 1em;
 	font-size: 1em;
 	max-width: 760px;
 	font-family: "Inter";
 }
 
-.p2p-loans span {
+.p2p-loans span, .nft-insur span, .smart span, .commerce span, .exchange span {
 	color: var(--green-color);
 }
 
-.p2p-loans b {
-	font-weight: bolder;
+
+
+.p2p-loans b, .nft-insur b , .smart b, .commerce b, .exchange b{
+	font-weight: 900;
 	padding-bottom: 0.2rem;
 	line-height: 2em;
 	font-size: 1.6em;
 	word-spacing: 10px;
-	border-bottom: 6px solid #88e900;
+	border-bottom: 5px solid #88e900;
 	max-width: 760px;
 }
 
-.p2p-info {
+.p2p-info, .nft-info, .smart-info, .commerce-info, .exchange-info {
 	padding-top: 1em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	line-height: 1.5em;
+}
+
+.p2{
+	padding: 1em 0em;
+	font-size: 1.3em;
 }
 
 .check ul {
@@ -371,7 +383,7 @@ img.commerce {
 .check ul li p {
 	margin-top: 5px;
 }
-.p2p-loans button {
+.p2p-loans button, .nft-insur button, .smart button {
 	border-radius: 20px;
 	margin-top: 5em;
 	color: black;
@@ -390,3 +402,12 @@ img.commerce {
 	display: flex;
 	justify-content: center;
 }
+
+
+hr.section-line{
+	width: 100%;
+    margin: 0.75rem auto;
+    border: none;
+    border-bottom: 1px solid #ffffff24;
+}
+
