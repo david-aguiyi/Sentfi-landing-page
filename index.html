@@ -5,12 +5,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="sentfi.css" />
-		<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-		<link rel="shortcut icon" href="images/faviconChange.js.download" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<script src="sentfi.js"></script>
 		<title>Sentfi Landing page</title>
 	</head>
 	<body>
+		<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 		<div class="senthead">
 			<header id="header">
 				<div class="logo">
@@ -78,24 +81,39 @@
 				<div class="features">
 					<div class="before"></div>
 					<div class="after"></div>
-					<h1>What our system is built for</h1>
-					<img class="hero-p2p" src="images/icon-1.svg" alt="p2p" />
-					<h4>Peer to Peer Commerce</h4>
-					<p class="p2p">
+					<h1 data-aos="fade-up">What our system is built for</h1>
+					<img
+						data-aos="fade-up"
+						class="hero-p2p"
+						src="images/icon-1.svg"
+						alt="p2p"
+					/>
+					<h4 data-aos="fade-up">Peer to Peer Commerce</h4>
+					<p data-aos="fade-up" class="p2p">
 						We protect buyers and service providers by ensuring terms and
 						conditions are completely met before settlement.
 					</p>
-					<img class="hero-rug" src="images/icon-2.svg" alt="" />
-					<h4>Anti Rug-Pull Services</h4>
-					<p class="rug">
+					<img
+						data-aos="fade-up"
+						class="hero-rug"
+						src="images/icon-2.svg"
+						alt=""
+					/>
+					<h4 data-aos="fade-up">Anti Rug-Pull Services</h4>
+					<p data-aos="fade-up" class="rug">
 						We protect investors by moderating project launches, we do this by
 						escrowing funds and releasing funds as project achieve their
 						milestones, this is 100% decided by their community. We refund
 						holders if projects fail to deliver as planned.
 					</p>
-					<img src="images/icon-3.svg" alt="" class="hero-holders" />
-					<h4>NFT holders</h4>
-					<p class="holders">
+					<img
+						data-aos="fade-up"
+						src="images/icon-3.svg"
+						alt=""
+						class="hero-holders"
+					/>
+					<h4 data-aos="fade-up">NFT holders</h4>
+					<p data-aos="fade-up" class="holders">
 						Back your transactions with your NFTs, instead of holding down your
 						funds, only pay when order is confirmed. Get loans using your NFTs
 						as collateral.
@@ -106,9 +124,14 @@
 			<section class="section-img">
 				<div>
 					<span id="backlight-3"></span>
-					<img class="commerce" src="images/p2p-loans.png" alt="commerce" />
+					<img
+						data-aos="fade-left"
+						class="commerce"
+						src="images/p2p-loans.png"
+						alt="commerce"
+					/>
 				</div>
-				<div class="p2p-loans">
+				<div data-aos="fade-left" class="p2p-loans">
 					<b><span> P2P </span> Loan</b>
 
 					<div class="p2p-info">
@@ -150,14 +173,15 @@
 			<!--NFT Insurance-->
 			<section class="section-3">
 				<div id="backlight-4"></div>
-				<div class="nft-insur">
-					<div class="img">
-						<img
-							class="nft"
-							src="images/nft-insurance.png"
-							alt="nft-insurance"
-						/>
-					</div>
+				<div class="img">
+					<img
+					data-aos="fade-right"
+						class="nft"
+						src="images/nft-insurance.png"
+						alt="nft-insurance"
+					/>
+				</div>
+				<div data-aos="fade-right" class="nft-insur">
 					<b> NFT <span> Insurance </span> </b>
 					<div class="nft-info">
 						<p>
@@ -196,12 +220,12 @@
 			<!--SMART ROI-->
 			<section class="section-3">
 				<div id="backlight-4"></div>
-				<div class="smart">
+				<div data-aos="fade-left" class="smart">
 					<div class="img">
-						<img class="smart" src="images/smart-roi.png" alt="smart-roi" />
+						<img data-aos="fade-left" class="smart" src="images/smart-roi.png" alt="smart-roi" />
 					</div>
 					<b> Smart <span> ROI </span> </b>
-					<div class="smart-info">
+					<div  class="smart-info">
 						<p>We offer market-leading returns on investment</p>
 					</div>
 
