@@ -13,6 +13,7 @@
 body {
 	overflow-x: hidden;
 	background: #100420;
+	margin: 0;
 }
 
 .senthead {
@@ -21,10 +22,10 @@ body {
 	position: fixed;
 	height: 4em;
 	z-index: 3;
-	width: 100%;
+	/* width: 100%; */
 }
 
-.smaller{
+.smaller {
 	height: 7em;
 }
 
@@ -32,6 +33,7 @@ header {
 	padding-top: 0.8rem;
 	display: flex;
 	flex-wrap: wrap;
+	width: 375px;
 	flex-direction: row;
 	justify-content: space-between; /* will change to space-around when doing media queries for laptop view */
 	align-items: center;
@@ -43,6 +45,7 @@ header {
 }
 .logo img {
 	width: 150px;
+	/* min-width: 200px; */
 	padding-left: 1rem;
 }
 
@@ -83,7 +86,8 @@ header {
 	filter: blur(90px);
 }
 
-#backlight-3, #backlight-4 {
+#backlight-3,
+#backlight-4 {
 	background: #5822f4;
 	display: block;
 	position: absolute;
@@ -133,7 +137,6 @@ img.line {
 main {
 	display: block;
 	padding-top: 1em;
-	margin: 0 auto;
 }
 
 .main-text {
@@ -147,6 +150,9 @@ main {
 	/* text-align: left; */
 	margin: 0 auto;
 	padding: 1em;
+}
+h1.bold-text {
+	font-weight: 900;
 }
 
 /* transform: rotate(9.39deg); */
@@ -197,13 +203,13 @@ main {
 }
 
 .main-button button.launch {
-	font-weight: 900 !important;
+	font-weight: 700 !important;
 	background-color: var(--green-color);
 	color: black;
 }
 
 .docs {
-	font-weight: 900 !important;
+	font-weight: 700 !important;
 	margin-left: 1em;
 	position: relative;
 }
@@ -323,7 +329,10 @@ button {
 	width: 94%;
 }
 
-img.commerce, img.nft, img.smart, img.exchange{
+img.commerce,
+img.nft,
+img.smart,
+img.exchange {
 	max-width: 100%;
 	width: 95%;
 	display: flex;
@@ -334,20 +343,30 @@ img.commerce, img.nft, img.smart, img.exchange{
 	margin-top: 4em;
 }
 
-.p2p-loans, .nft-insur, .smart, .commerce, .exchange{
+.p2p-loans,
+.nft-insur,
+.smart,
+.commerce,
+.exchange {
 	padding: 1em;
 	font-size: 1em;
 	max-width: 760px;
 	font-family: "Inter";
 }
 
-.p2p-loans span, .nft-insur span, .smart span, .commerce span, .exchange span {
+.p2p-loans span,
+.nft-insur span,
+.smart span,
+.commerce span,
+.exchange span {
 	color: var(--green-color);
 }
 
-
-
-.p2p-loans b, .nft-insur b , .smart b, .commerce b, .exchange b{
+.p2p-loans b,
+.nft-insur b,
+.smart b,
+.commerce b,
+.exchange b {
 	font-weight: 900;
 	padding-bottom: 0.2rem;
 	line-height: 2em;
@@ -357,15 +376,20 @@ img.commerce, img.nft, img.smart, img.exchange{
 	max-width: 760px;
 }
 
-.p2p-info, .nft-info, .smart-info, .commerce-info, .exchange-info {
+.p2p-info,
+.nft-info,
+.smart-info p,
+.commerce-info,
+.exchange-info {
 	padding-top: 1em;
 	display: flex;
-	justify-content: center;
+	max-width: 650px;
+	/* justify-content: center; */
 	align-items: center;
 	line-height: 1.5em;
 }
 
-.p2{
+.p2 {
 	padding: 1em 0em;
 	font-size: 1.3em;
 }
@@ -376,6 +400,7 @@ img.commerce, img.nft, img.smart, img.exchange{
 .check ul li {
 	display: flex;
 	padding-top: 1em;
+	max-width: 650px;
 }
 .check ul li img {
 	padding-right: 1em;
@@ -383,7 +408,9 @@ img.commerce, img.nft, img.smart, img.exchange{
 .check ul li p {
 	margin-top: 5px;
 }
-.p2p-loans button, .nft-insur button, .smart button {
+.p2p-loans button,
+.nft-insur button,
+.smart button {
 	border-radius: 20px;
 	margin-top: 5em;
 	color: black;
@@ -403,28 +430,27 @@ img.commerce, img.nft, img.smart, img.exchange{
 	justify-content: center;
 }
 
-
-hr.section-line{
+hr.section-line {
 	width: 100%;
-    margin: 0.75rem auto;
-    border: none;
-    border-bottom: 1px solid #ffffff24;
+	margin: 0.75rem auto;
+	border: none;
+	border-bottom: 1px solid #ffffff24;
 }
 
-.card{
+.card {
 	display: block;
 	margin: 0 auto;
 	max-width: 650px;
 	/* width: 100%; */
 	margin-top: 4em;
-	font-family: 'Inter';
+	font-family: "Inter";
 }
 
-.card-body{
+.card-body {
 	height: 25em;
 	padding: 0 2em;
 	padding-top: 2em;
-	background-color: #6923FF;
+	background-color: #6923ff;
 	border-radius: 20px;
 	display: flex;
 	flex-direction: column;
@@ -432,26 +458,26 @@ hr.section-line{
 	text-align: left;
 }
 
-.card-title p{
+.card-title p {
 	color: var(--green-color);
 	font-weight: 700;
 }
 
-.card-text .p1{
+.card-text .p1 {
 	font-weight: 900;
-font-size: 1.7rem;
-line-height: 1.5em;
-margin-top: 1em;
+	font-size: 1.7rem;
+	line-height: 1.5em;
+	margin-top: 1em;
 }
 
-.card-text .p3{
+.card-text .p3 {
 	font-size: 0.9rem;
 	margin-top: 1em;
 	line-height: 1.5em;
 	font-weight: 500;
 }
 
-.card-button button{
+.card-button button {
 	border-radius: 17px;
 	margin-top: 2em;
 	margin-left: auto;
@@ -466,4 +492,77 @@ margin-top: 1em;
 	font-weight: bold;
 	text-align: center;
 	background-color: var(--green-color);
+}
+
+@media (min-width: 750px) {
+	html {
+		font-size: 1.4em;
+	}
+	button {
+		font-size: 14px;
+		background-color: transparent;
+		border: 1px solid var(--green-color);
+		border-radius: 15px;
+		width: 8rem;
+		height: 55px;
+	}
+	header {
+		width: 768px;
+	}
+
+	.senthead {
+		height: 3.8em;
+	}
+
+	section {
+		width: 768px;
+	}
+	.logo {
+		display: block;
+	}
+	.logo img {
+		width: 180px;
+		padding-left: 1rem;
+	}
+
+	.head-button {
+		padding-right: 1em;
+	}
+	.head-button button {
+		font-size: 14px;
+		width: 7rem;
+		height: 50px;
+	}
+	.main-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 700px;
+		line-height: 2rem;
+		margin-top:0.2em;
+	}
+	h1.bold-text {
+		text-align: center;
+	}
+	.info-text {
+		text-align: center;
+		width: 420px;
+	}
+	
+	.purple-icon .purple {
+		width: 120px;
+		margin-left: 2.5em;
+		margin-top: -2em;
+	}
+	
+	.purple-icon .line {
+		width: 75px;
+		margin-left: -5em;
+	}
+
+	.hero-orange img {
+		width: 90px;
+		margin-left: 3.3em;
+	}
 }
