@@ -600,7 +600,7 @@ h1.support {
 
 	.senthead {
 		height: 3.1em;
-		width: 100%;
+		width: 26.3%;
 	}
 
 	section {
@@ -716,17 +716,16 @@ h1.support {
 	}
 }
 
-@media (max-width:580px) {
-	.senthead{
-		width: 100%;
+@media (max-width: 580px) {
+	.senthead {
+		width: 26.32%;
 	}
 }
-
 
 @media (min-width: 900px) {
 	.senthead {
 		height: 3.1em;
-		min-width: 100%;
+		/* min-width: 100%; */
 	}
 
 	.section-3,
