@@ -30,12 +30,12 @@ body {
 }
 
 header {
-	padding-top: 0.8rem;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-between; /* will change to space-around when doing media queries for laptop view */
 	align-items: center;
+	padding-top: 0.8rem;
 	font-family: "Inter";
 }
 
@@ -136,6 +136,7 @@ img.line {
 main {
 	display: block;
 	padding-top: 1em;
+	/* width: 2000px; */
 }
 
 .main-text {
@@ -345,18 +346,18 @@ img.exchange {
 
 .p2p-loans,
 .nft-insur,
-.smart,
+.smart-1,
 .commerce,
 .exchange {
 	padding: 1em;
 	font-size: 1em;
-	max-width: 760px;
+	/* max-width: 760px; */
 	font-family: "Inter";
 }
 
 .p2p-loans span,
 .nft-insur span,
-.smart span,
+.smart-1 span,
 .commerce span,
 .exchange span {
 	color: var(--green-color);
@@ -364,7 +365,7 @@ img.exchange {
 
 .p2p-loans b,
 .nft-insur b,
-.smart b,
+.smart-1 b,
 .commerce b,
 .exchange b {
 	font-weight: 900;
@@ -373,17 +374,18 @@ img.exchange {
 	font-size: 1.6em;
 	word-spacing: 10px;
 	border-bottom: 5px solid #88e900;
-	max-width: 760px;
+	/* max-width: 760px; */
+	white-space: nowrap;
 }
 
 .p2p-info,
 .nft-info,
-.smart-info p,
+.smart-1 p,
 .commerce-info,
 .exchange-info {
 	padding-top: 1em;
 	display: flex;
-	max-width: 650px;
+	/* max-width: 650px; */
 	/* justify-content: center; */
 	align-items: center;
 	line-height: 1.5em;
@@ -410,7 +412,7 @@ img.exchange {
 }
 .p2p-loans button,
 .nft-insur button,
-.smart button {
+.smart-1 button {
 	border-radius: 20px;
 	margin-top: 5em;
 	color: black;
@@ -425,9 +427,9 @@ img.exchange {
 	background-color: var(--green-color);
 }
 
-.button {
+.smart-button {
 	display: flex;
-	justify-content: center;
+	/* justify-content: center; */
 }
 
 hr.section-line {
@@ -457,7 +459,6 @@ hr.section-line {
 	/* flex-direction: column; */
 	/* justify-content: center; */
 	text-align: left;
-
 }
 
 .card-title p {
@@ -497,23 +498,23 @@ hr.section-line {
 }
 
 /* Imageslider */
-.projects{
+.projects {
 	margin: 5em 0em;
-	/* position: relative; */
+	position: relative;
 }
 
-h1.support{
+h1.support {
 	font-weight: 800;
 	font-size: 2rem;
 	line-height: 1.5em;
 	margin-top: 1em;
 	margin-bottom: 1.5em;
-	font-family: 'Inter';
+	font-family: "Inter";
 	text-align: center;
 }
 
 .supported-projects {
-	/* min-height: 30vh; */
+	/* position: relative; */
 	display: grid;
 	place-items: center;
 }
@@ -521,44 +522,53 @@ h1.support{
 .slider {
 	height: 50px;
 	margin: auto;
-	position: relative;
+	/* position: relative; */
 	display: grid;
 	width: 90%;
 	place-items: center;
-
 }
 
-.slide-track {
+.supported-projects_images {
 	display: flex;
-	width: calc(250px * 26);
-	animation: scroll 90s linear infinite;
+	min-width: 400vw;
+	height: 100%;
+	flex-direction: row;
+	overflow: hidden;
+	animation: scroll 40s linear infinite;
+	/* overflow: hidden; */
 }
 
-.img {
-	width: 250px;
+.supported-projects img {
+	/* height: 100px; */
 	display: flex;
-	height: 250px;
-	position: relative;
+	height: auto;
+	/* position: relative; */
 	align-items: center;
+	overflow-x: hidden;
+}
+.supported-projects_images:hover {
+	animation-play-state: paused;
+}
+.img {
+	max-width: 250px;
+	width: 100%;
 }
 
-.projects p{
+.supporteyyy\ p {
 	position: absolute;
-	bottom: 0;
+	/* bottom: 0; */
+	margin-left: 0.5em;
+	font-size: 1.1em;
+	font-family: "Inter";
+	margin-top: 18rem;
+	white-space: nowrap;
 }
 .slimg {
 	width: 100%;
+	/* overflow-x: hidden; */
 	transition: transform 1s;
 }
 /* Onhover */
-
-.slimg:hover {
-	transform: translateZ(20px);
-}
-
-.slide-track:hover {
-	animation-play-state: paused;
-}
 
 /* Autoscroll */
 
@@ -567,7 +577,7 @@ h1.support{
 		transform: translateX(0);
 	}
 	100% {
-		transform: translateX(calc(-250px * 26));
+		transform: translateX(-50%);
 	}
 }
 
@@ -590,10 +600,12 @@ h1.support{
 
 	.senthead {
 		height: 3.1em;
+		width: 100%;
 	}
 
 	section {
-		width: 768px;
+		/* width: 450px;
+		min-width: 600px; */
 	}
 	.logo {
 		display: block;
@@ -603,6 +615,9 @@ h1.support{
 		padding-left: 1rem;
 	}
 
+	header {
+		/* justify-content: space-around; */
+	}
 	.head-button {
 		padding-right: 1em;
 	}
@@ -698,5 +713,45 @@ h1.support{
 
 	.features img {
 		width: 110px;
+	}
+}
+
+@media (max-width:580px) {
+	.senthead{
+		width: 100%;
+	}
+}
+
+
+@media (min-width: 900px) {
+	.senthead {
+		height: 3.1em;
+		min-width: 100%;
+	}
+
+	.section-3,
+	.section-4,
+	.section-5,
+	.section-6,
+	.section-7 {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+		width: 100%;
+	}
+	.section-6,
+	.section-7 {
+		display: flex;
+		flex-direction: row-reverse;
+		/* width: 1000px !important; */
+	}
+	img.commerce,
+	img.nft,
+	img.smart,
+	img.exchange {
+		max-width: 600px;
+		width: 800px;
 	}
 }
