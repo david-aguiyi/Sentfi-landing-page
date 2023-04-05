@@ -11,9 +11,9 @@
 }
 
 body {
-	overflow-x: hidden;
 	background: #100420;
-	margin: 0;
+	margin: 0;		
+	overflow-x: hidden;
 }
 
 .senthead {
@@ -135,29 +135,48 @@ img.line {
 
 main {
 	display: block;
-	padding-top: 1em;
-	/* width: 2000px; */
+	padding-top: 1rem;
 }
 
 .main-text {
-	min-width: 23rem;
 	position: relative;
 	font-family: "Inter";
-	font-size: 1.1em;
-	font-weight: 900;
+	/* font-size: 1.2em; */
+	/* font-weight: 900; */
 	line-height: 30px;
 	letter-spacing: 0.02em;
 	/* text-align: left; */
-	margin: 0 auto;
-	padding: 1em;
+	/* margin: 0 auto; */
+	padding: 1rem;
 }
 h1.bold-text {
 	font-weight: 900;
+	/* max-width: 20px; */
+	font-size: 1.65rem;
+	max-width:500px;
+	/* font-size: ; */
+	line-height: 1.5;
 }
 
+@media screen and (min-width: 500px){
+	h1.bold-text{
+		font-size: 2rem;
+		/* max-width: 600px; */
+	}
+	
+}
+
+@media screen and (min-width:700px){
+	h1.bold-text{
+		font-size: 3.1rem;
+		max-width: 700px;
+	}
+	
+}
 /* transform: rotate(9.39deg); */
 #section-1 {
 	margin-top: 2em;
+
 }
 
 .hero-bg {
@@ -182,14 +201,14 @@ h1.bold-text {
 .info-text {
 	padding-top: 2em;
 	font-family: Inter;
-	font-size: 12px;
-	font-weight: 400;
+	font-size: 1rem;
+	font-weight: 500;
 	line-height: 25px;
 	letter-spacing: 0em;
-	text-align: left;
-	/* width: 86%; */
+	width:auto;
+	max-width: 150vh;
 	display: block;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 }
 
 .main-button {
@@ -235,8 +254,8 @@ button {
 }
 
 .hero-3-4 {
-	margin-top: 4em;
-	max-width: 100%;
+	padding-top: 4rem;
+	margin: 0 auto;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -286,20 +305,22 @@ button {
 .section-2 {
 	position: relative;
 }
-.section-2 .features {
+
+.section-2 .features > div {
 	font-family: "Inter";
-	margin-left: 2em;
+	margin-top: 3rem;
+	margin-left: 2rem;
 	text-align: left;
 	display: grid;
-	/* flex-direction: column; */
 	align-items: center;
 	gap: 50px;
-	width: 20rem;
+	width:auto;
+	max-width: 90%;
 	justify-content: start;
 }
 
 .features h4 {
-	font-size: 1.15rem;
+	font-size: 1.15em;
 	text-align: left;
 }
 
@@ -310,16 +331,22 @@ button {
 	margin-bottom: -0.5em;
 }
 
+.features h1{
+	margin-top: 3rem;
+	text-align: center;
+	font-size: 1.7rem;
+}
+
 .features p {
 	color: #ffffffa6;
 	font-size: 0.9rem;
 	font-weight: 500;
-	/* max-width: 400px; */
 	margin-top: -2em;
 }
 
 .features .p2p {
-	width: 89%;
+	width: auto;
+	max-width: 70%;
 }
 
 .features .rug {
@@ -353,6 +380,10 @@ img.exchange {
 	font-size: 1em;
 	/* max-width: 760px; */
 	font-family: "Inter";
+}
+
+img#comm{
+	margin-right: -1em;
 }
 
 .p2p-loans span,
@@ -443,14 +474,14 @@ hr.section-line {
 	display: block;
 	margin: 0 auto;
 	max-width: 650px;
-	/* width: 100%; */
+	width: 70vh;
 	margin-top: 4em;
 	font-family: "Inter";
 }
 
 .card-body {
-	height: 55vh;
-	max-height: 550px;
+	min-height: 51vh;
+	/* max-height: 550px; */
 	padding: 0 2em;
 	padding-top: 2em;
 	background-color: #6923ff;
@@ -581,9 +612,17 @@ h1.support {
 	}
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1300px) {
+	.purple-icon .purple {
+		width: 120px;
+		margin-left: 12em;
+	}
+}
+
+@media (min-width: 789px) {
 	body {
-		font-size: 1.4em;
+		font-size: 1.4rem;
+		overflow-x: hidden;
 	}
 	button {
 		font-size: 14px;
@@ -594,19 +633,10 @@ h1.support {
 		height: 45px;
 	}
 
-	.main-button {
-		margin-left: -5em;
+	header{
+		margin-top: 0.7rem;
 	}
 
-	.senthead {
-		height: 3.1em;
-		width: 26.3%;
-	}
-
-	section {
-		/* width: 450px;
-		min-width: 600px; */
-	}
 	.logo {
 		display: block;
 	}
@@ -615,9 +645,6 @@ h1.support {
 		padding-left: 1rem;
 	}
 
-	header {
-		/* justify-content: space-around; */
-	}
 	.head-button {
 		padding-right: 1em;
 	}
@@ -627,30 +654,34 @@ h1.support {
 		height: 45px;
 	}
 	.main-text {
-		width: 550px;
-		margin-left: 1.4em;
+		/* width: 550px; */
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		text-align: center;
+		width: 870px;
 		/* justify-content: center; */
 		padding: 0;
-		line-height: 3.3rem;
+		font-size: 2.4rem;
+		line-height: 1.2;
 	}
 	h1.bold-text {
-		text-align: left;
+		/* text-align: left; */
 		font-size: 1.7em;
+
 	}
 	.info-text {
-		text-align: left;
-		width: 500px;
-		font-size: 1.1rem;
+		/* text-align: left;
+		width: 500px; */
+		width: 600px;
+		font-size: 1.2rem;
 		line-height: 1.5;
-		margin-left: -2.5em;
+		/* margin-left: -2.5em; */
 	}
 
 	.purple-icon .purple {
-		width: 90px;
-		/* margin-left: 2.5em; */
+		width: 120px;
+		margin-left: 2.5em;
 		/* margin-top: -em; */
 	}
 
@@ -664,17 +695,17 @@ h1.support {
 	}
 
 	.purple-icon .line {
-		width: 55px;
-		margin-left: -3.5em;
+		width: 80px;
+		margin-left: -5em;
 	}
 
 	.hero-orange img {
-		width: 70px;
+		width: 90px;
 		margin-left: 2em;
 	}
 	.hero-3-4 {
 		/* margin-left:  auto; */
-		margin-left: -2.4em;
+		/* margin-left: -2.4em; */
 		justify-content: space-evenly;
 	}
 
@@ -689,11 +720,13 @@ h1.support {
 	.hero-line {
 		width: 70px;
 	}
+/* 
+	.features{
+	}
 
 	.features p {
 		font-size: 1rem;
-		/* width: 400px; */
-	}
+		}
 	.features .rug {
 		width: 85%;
 		max-width: 100%;
@@ -713,20 +746,27 @@ h1.support {
 
 	.features img {
 		width: 110px;
+	} */
+	img#comm{
+		margin: 0 auto;
 	}
 }
 
 @media (max-width: 580px) {
-	.senthead {
+	/* .senthead {
 		width: 26.32%;
-	}
+	} */
 }
 
 @media (min-width: 900px) {
-	.senthead {
+	/* .senthead {
 		height: 3.1em;
-		/* min-width: 100%; */
-	}
+		min-width: 100%;
+	} */
+body{
+	overflow-x: hidden;
+
+}
 
 	.section-3,
 	.section-4,
@@ -751,6 +791,10 @@ h1.support {
 	img.smart,
 	img.exchange {
 		max-width: 600px;
-		width: 800px;
+		width: 500px;
+	}
+
+	img#comm{
+		margin-left: -3em;
 	}
 }
