@@ -1,19 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;800;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;800;900&display=swap"); */
 * {
 	color: white;
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: inherit;
 }
 
 :root {
 	--green-color: #88e900;
+	--font-family: "Inter", sans-serif;
 }
 
 body {
 	background: #100420;
-	margin: 0;		
+	margin: 0;
 	overflow-x: hidden;
+	font-family: var(--font-family);
 }
 
 .senthead {
@@ -23,6 +26,7 @@ body {
 	height: 4em;
 	z-index: 3;
 	width: 100%;
+	transition: 440ms 330ms ease-out;
 }
 
 .smaller {
@@ -36,7 +40,6 @@ header {
 	justify-content: space-between; /* will change to space-around when doing media queries for laptop view */
 	align-items: center;
 	padding-top: 0.8rem;
-	font-family: "Inter";
 }
 
 .logo {
@@ -136,11 +139,11 @@ img.line {
 main {
 	display: block;
 	padding-top: 1rem;
+	overflow-x: hidden;
 }
 
 .main-text {
 	position: relative;
-	font-family: "Inter";
 	/* font-size: 1.2em; */
 	/* font-weight: 900; */
 	line-height: 30px;
@@ -152,31 +155,35 @@ main {
 h1.bold-text {
 	font-weight: 900;
 	/* max-width: 20px; */
-	font-size: 1.65rem;
-	max-width:500px;
+	font-size: 24px;
+	/* max-width: 500px; */
 	/* font-size: ; */
 	line-height: 1.5;
 }
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 400px) {
 	h1.bold-text{
+		font-size: 26px;
+		/* max-width: 400px; */
+	}
+}
+
+@media screen and (min-width: 500px) {
+	h1.bold-text {
 		font-size: 2rem;
 		/* max-width: 600px; */
 	}
-	
 }
 
-@media screen and (min-width:700px){
-	h1.bold-text{
+@media screen and (min-width: 700px) {
+	h1.bold-text {
 		font-size: 3.1rem;
 		max-width: 700px;
 	}
-	
 }
 /* transform: rotate(9.39deg); */
 #section-1 {
 	margin-top: 2em;
-
 }
 
 .hero-bg {
@@ -198,17 +205,19 @@ h1.bold-text {
 	color: var(--green-color);
 }
 
-.info-text {
+.info-text{
 	padding-top: 2em;
-	font-family: Inter;
-	font-size: 1rem;
+	font-size: 14px;
 	font-weight: 500;
 	line-height: 25px;
 	letter-spacing: 0em;
-	width:auto;
+	width: auto;
 	max-width: 150vh;
 	display: block;
 	/* margin: 0 auto; */
+}
+pre{
+	font-size: 14px;
 }
 
 .main-button {
@@ -262,20 +271,21 @@ button {
 }
 
 .hero-buy {
-	width: 160px;
+	width: auto;
 	padding-top: 0.6rem;
 	margin-left: -0.9rem;
-	max-width: 200px;
+	max-width: 40%;
 }
 
 .hero-sell {
-	width: 148px;
+	width: auto;
 	padding-top: 7px;
-	max-width: 200px;
+	max-width: 40%;
 }
 
 .hero-line {
-	width: 40px;
+	width: auto;
+	max-width: 50px;
 }
 
 .section-2::before,
@@ -307,14 +317,13 @@ button {
 }
 
 .section-2 .features > div {
-	font-family: "Inter";
 	margin-top: 3rem;
 	margin-left: 2rem;
 	text-align: left;
 	display: grid;
 	align-items: center;
 	gap: 50px;
-	width:auto;
+	width: auto;
 	max-width: 90%;
 	justify-content: start;
 }
@@ -331,16 +340,17 @@ button {
 	margin-bottom: -0.5em;
 }
 
-.features h1{
+.features h1 {
 	margin-top: 3rem;
 	text-align: center;
-	font-size: 1.7rem;
+	/* font-size: ; */
 }
 
 .features p {
 	color: #ffffffa6;
-	font-size: 0.9rem;
+	font-size: 14px;
 	font-weight: 500;
+	line-height: 1.5;
 	margin-top: -2em;
 }
 
@@ -379,10 +389,9 @@ img.exchange {
 	padding: 1em;
 	font-size: 1em;
 	/* max-width: 760px; */
-	font-family: "Inter";
 }
 
-img#comm{
+img#comm {
 	margin-right: -1em;
 }
 
@@ -476,7 +485,6 @@ hr.section-line {
 	max-width: 650px;
 	width: 70vh;
 	margin-top: 4em;
-	font-family: "Inter";
 }
 
 .card-body {
@@ -540,7 +548,6 @@ h1.support {
 	line-height: 1.5em;
 	margin-top: 1em;
 	margin-bottom: 1.5em;
-	font-family: "Inter";
 	text-align: center;
 }
 
@@ -566,7 +573,6 @@ h1.support {
 	flex-direction: row;
 	overflow: hidden;
 	animation: scroll 40s linear infinite;
-	/* overflow: hidden; */
 }
 
 .supported-projects img {
@@ -575,7 +581,6 @@ h1.support {
 	height: auto;
 	/* position: relative; */
 	align-items: center;
-	overflow-x: hidden;
 }
 .supported-projects_images:hover {
 	animation-play-state: paused;
@@ -590,13 +595,11 @@ h1.support {
 	/* bottom: 0; */
 	margin-left: 0.5em;
 	font-size: 1.1em;
-	font-family: "Inter";
 	margin-top: 18rem;
 	white-space: nowrap;
 }
 .slimg {
 	width: 100%;
-	/* overflow-x: hidden; */
 	transition: transform 1s;
 }
 /* Onhover */
@@ -622,7 +625,7 @@ h1.support {
 @media (min-width: 789px) {
 	body {
 		font-size: 1.4rem;
-		overflow-x: hidden;
+		/* overflow-x: hidden; */
 	}
 	button {
 		font-size: 14px;
@@ -633,7 +636,7 @@ h1.support {
 		height: 45px;
 	}
 
-	header{
+	header {
 		margin-top: 0.7rem;
 	}
 
@@ -668,7 +671,6 @@ h1.support {
 	h1.bold-text {
 		/* text-align: left; */
 		font-size: 1.7em;
-
 	}
 	.info-text {
 		/* text-align: left;
@@ -720,7 +722,7 @@ h1.support {
 	.hero-line {
 		width: 70px;
 	}
-/* 
+	/* 
 	.features{
 	}
 
@@ -747,7 +749,7 @@ h1.support {
 	.features img {
 		width: 110px;
 	} */
-	img#comm{
+	img#comm {
 		margin: 0 auto;
 	}
 }
@@ -763,10 +765,9 @@ h1.support {
 		height: 3.1em;
 		min-width: 100%;
 	} */
-body{
-	overflow-x: hidden;
-
-}
+	body {
+		/* overflow-x: hidden; */
+	}
 
 	.section-3,
 	.section-4,
@@ -794,7 +795,7 @@ body{
 		width: 500px;
 	}
 
-	img#comm{
+	img#comm {
 		margin-left: -3em;
 	}
 }
