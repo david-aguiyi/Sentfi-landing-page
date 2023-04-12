@@ -283,6 +283,115 @@ h1.bold-text {
 	width: 94%;
 }
 
+img.commerce,
+img.nft,
+img.smart,
+img.exchange {
+	max-width: 600px;
+	width: 95%;
+	display: block;
+	justify-content: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4em;
+}
+
+.p2p-loans,
+.nft-insur,
+.smart-1,
+.commerce,
+.exchange {
+	padding: 1em;
+	font-size: 1em;
+	/* max-width: 760px; */
+}
+
+img#comm {
+	margin-right: -1em;
+}
+
+.p2p-loans span,
+.nft-insur span,
+.smart-1 span,
+.commerce span,
+.exchange span {
+	color: var(--green-color);
+}
+
+.p2p-loans b,
+.nft-insur b,
+.smart-1 b,
+.commerce b,
+.exchange b {
+	font-weight: 900;
+	padding-bottom: 0.2rem;
+	line-height: 2em;
+	font-size: 1.6em;
+	word-spacing: 10px;
+	border-bottom: 5px solid #88e900;
+	/* max-width: 760px; */
+	white-space: nowrap;
+}
+
+.p2p-info,
+.nft-info,
+.smart-1 p,
+.commerce-info,
+.exchange-info {
+	padding-top: 1em;
+	display: flex;
+	/* max-width: 650px; */
+	/* justify-content: center; */
+	align-items: center;
+	line-height: 1.5em;
+}
+
+.p2 {
+	padding: 1em 0em;
+	font-size: 1.3em;
+}
+
+.check ul {
+	list-style: none;
+}
+.check ul li {
+	display: flex;
+	padding-top: 1em;
+	max-width: 650px;
+}
+.check ul li img {
+	padding-right: 1em;
+}
+.check ul li p {
+	margin-top: 5px;
+}
+
+.checksmart ul li p {
+	margin-top: -16px;
+}
+.p2p-loans button,
+.nft-insur button,
+.smart-1 button {
+	border-radius: 20px;
+	margin-top: 5em;
+	color: black;
+	width: 140px;
+	height: 50px;
+	font-size: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	text-align: center;
+	background-color: var(--green-color);
+}
+
+.smart-button {
+	display: flex;
+	/* justify-content: center; */
+}
+
 @media screen and (min-width: 400px) {
 	h1.bold-text {
 		font-size: 26px;
@@ -467,114 +576,7 @@ h1.bold-text {
 	position: relative;
 }
 
-img.commerce,
-img.nft,
-img.smart,
-img.exchange {
-	max-width: 600px;
-	width: 95%;
-	display: block;
-	justify-content: center;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 4em;
-}
 
-.p2p-loans,
-.nft-insur,
-.smart-1,
-.commerce,
-.exchange {
-	padding: 1em;
-	font-size: 1em;
-	/* max-width: 760px; */
-}
-
-img#comm {
-	margin-right: -1em;
-}
-
-.p2p-loans span,
-.nft-insur span,
-.smart-1 span,
-.commerce span,
-.exchange span {
-	color: var(--green-color);
-}
-
-.p2p-loans b,
-.nft-insur b,
-.smart-1 b,
-.commerce b,
-.exchange b {
-	font-weight: 900;
-	padding-bottom: 0.2rem;
-	line-height: 2em;
-	font-size: 1.6em;
-	word-spacing: 10px;
-	border-bottom: 5px solid #88e900;
-	/* max-width: 760px; */
-	white-space: nowrap;
-}
-
-.p2p-info,
-.nft-info,
-.smart-1 p,
-.commerce-info,
-.exchange-info {
-	padding-top: 1em;
-	display: flex;
-	/* max-width: 650px; */
-	/* justify-content: center; */
-	align-items: center;
-	line-height: 1.5em;
-}
-
-.p2 {
-	padding: 1em 0em;
-	font-size: 1.3em;
-}
-
-.check ul {
-	list-style: none;
-}
-.check ul li {
-	display: flex;
-	padding-top: 1em;
-	max-width: 650px;
-}
-.check ul li img {
-	padding-right: 1em;
-}
-.check ul li p {
-	margin-top: 5px;
-}
-
-.checksmart ul li p {
-	margin-top: -16px;
-}
-.p2p-loans button,
-.nft-insur button,
-.smart-1 button {
-	border-radius: 20px;
-	margin-top: 5em;
-	color: black;
-	width: 140px;
-	height: 50px;
-	font-size: 15px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-weight: bold;
-	text-align: center;
-	background-color: var(--green-color);
-}
-
-.smart-button {
-	display: flex;
-	/* justify-content: center; */
-}
 
 hr.section-line {
 	width: 100%;
