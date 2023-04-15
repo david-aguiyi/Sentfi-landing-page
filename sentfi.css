@@ -87,7 +87,7 @@ button {
 	background: #5822f4;
 	display: block;
 	position: absolute;
-	width: 300px;
+	width: 500px;
 	z-index: -1;
 	top: -2%;
 	height: 300px;
@@ -99,7 +99,7 @@ button {
 	background: #5822f4;
 	display: block;
 	position: absolute;
-	width: 300px;
+	width: 500px;
 	z-index: -1;
 	height: 300px;
 	opacity: 0.2;
@@ -111,7 +111,7 @@ button {
 	background: #5822f4;
 	display: block;
 	position: absolute;
-	width: 300px;
+	width: 700px;
 	z-index: -1;
 	/* bottom: -5%; */
 	height: 500px;
@@ -493,6 +493,70 @@ img#comm {
 		button .launch {
 			font-weight: 900;
 		}
+
+		img.commerce,
+		img.nft,
+		img.smart,
+		img.exchange {
+			max-width: 800px;
+			width: auto;
+			margin-top: 4em;
+			/* margin: 0 auto; */
+		}
+
+		.p2p-loans,
+		.nft-insur,
+		.smart-1,
+		.commerce,
+		.exchange {
+			padding: 2em;
+			font-size: 1.7rem;
+			/* max-width: 760px; */
+		}
+
+		img#comm {
+			margin: 0 auto;
+		}
+
+		.p2p-loans span,
+		.nft-insur span,
+		.smart-1 span,
+		.commerce span,
+		.exchange span {
+			color: var(--green-color);
+		}
+
+		.p2p-loans b,
+		.nft-insur b,
+		.smart-1 b,
+		.commerce b,
+		.exchange b {
+			font-weight: 900;
+			padding-bottom: 0.2rem;
+			line-height: 2em;
+			font-size: 1.6em;
+			word-spacing: 10px;
+			border-bottom: 5px solid #88e900;
+			/* max-width: 760px; */
+			white-space: nowrap;
+		}
+
+		.p2p-info,
+		.nft-info,
+		.smart-1 p,
+		.commerce-info,
+		.exchange-info {
+			padding-top: 1em;
+			display: flex;
+			/* max-width: 650px; */
+			/* justify-content: center; */
+			align-items: center;
+			line-height: 1.5em;
+		}
+
+		.checksmart ul li p {
+			margin-top: -25px;
+		}
 	}
 
 	.section-2 .features > div {
@@ -503,12 +567,11 @@ img#comm {
 	}
 	.features p {
 		font-size: 18px;
-		
 	}
-	.features .rug{
+	.features .rug {
 		width: 85%;
 	}
-	.features .holders{
+	.features .holders {
 		width: 85%;
 	}
 	.features h4 {
@@ -575,8 +638,6 @@ img#comm {
 .section-2 {
 	position: relative;
 }
-
-
 
 hr.section-line {
 	width: 100%;
@@ -722,27 +783,79 @@ h1.support {
 }
 
 @media (min-width: 1300px) {
+	.senthead {
+		/* height: 7rem; */
+		background: rgba(16, 4, 32, 0.87);
+	}
+
+	button {
+		width: 130px;
+		height: 40px;
+		border-radius: 1rem;
+		font-size: 80%;
+		font-weight: 800;
+	}
+
+	h1.bold-text {
+		font-size: 3rem;
+		width: 730px;
+		text-align: center;
+		margin-inline: auto;
+		position: relative;
+		z-index: 2;
+	}
+
+	p.info-text {
+		text-align: center;
+		width: 400px;
+	}
+
+	pre {
+		text-align: center;
+	}
+
 	.purple-icon .purple {
 		width: 120px;
-		margin-left: 12em;
-	}
-}
-
-@media (max-width: 580px) {
-	/* .senthead {
-		width: 26.32%;
-	} */
-}
-
-@media (min-width: 1100px) {
-	/* .senthead {
-		height: 3.1em;
-		min-width: 100%;
-	} */
-	body {
-		width: 900px;
+		margin-left: 17em;
+		margin-bottom: -1em;
 	}
 
+	img.line {
+		width: 90px;
+		margin-left: -6em;
+	}
+
+	.main-button button {
+		width: 145px;
+		height: 45px;
+		font-size: 90%;
+	}
+
+	.hero-orange {
+		width: 120px;
+	}
+
+	.hero-orange img {
+		width: 77%;
+	}
+
+	.hero-3-4 {
+		width: 1000px;
+	}
+
+	.features {
+		display: flex;
+		flex-direction: row;
+		margin-top: 2rem;
+		position: relative;
+	}
+
+	.features h1 {
+		position: absolute;
+		left: 50%;
+		right: 50%;
+		white-space: nowrap;
+	}
 	.section-3,
 	.section-4,
 	.section-5,
