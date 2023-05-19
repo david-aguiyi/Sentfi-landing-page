@@ -316,7 +316,6 @@ img#comm {
 	font-size: 1.6em;
 	word-spacing: 10px;
 	border-bottom: 5px solid #88e900;
-	white-space: nowrap;
 }
 
 .p2p-info,
@@ -874,11 +873,5 @@ img.right-img {
 	img.left-img {
 		left: -50px;
 		bottom: 0;
-	}
-}
-
-@media (min-width: 1470px) {
-	.senthead {
-		width: 1440px;
 	}
 }
