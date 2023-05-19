@@ -234,13 +234,13 @@ h1.bold-text {
 
 .section-2 .features > div {
 	/* margin-top: 3rem; */
-	margin-left: 2rem;
+	margin-left: 1.5rem;
 	text-align: left;
 	display: grid;
 	align-items: center;
 	gap: 50px;
 	width: auto;
-	/* max-width: 90%; */
+	max-width: 88%;
 	/* justify-content: start; */
 }
 
@@ -257,9 +257,10 @@ h1.bold-text {
 }
 
 .features h1 {
-	margin-top: 3rem;
+	margin-top: 2rem;
 	text-align: center;
-	/* font-size: ; */
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 .features p {
@@ -272,7 +273,7 @@ h1.bold-text {
 
 .features .p2p {
 	width: auto;
-	max-width: 70%;
+	/* max-width: 70%; */
 }
 
 .features .rug {
@@ -340,9 +341,9 @@ img#comm {
 .commerce-info,
 .exchange-info {
 	padding-top: 1em;
+	width: auto;
 	display: flex;
-	/* max-width: 650px; */
-	/* justify-content: center; */
+	max-width: 650px;
 	align-items: center;
 	line-height: 1.5em;
 }
@@ -647,6 +648,7 @@ img#comm {
 .section-2 {
 	position: relative;
 	margin-top: 8rem;
+	margin-bottom: 5rem;
 }
 
 hr.section-line {
@@ -779,6 +781,11 @@ h1.support {
 	width: 100%;
 	transition: transform 1s;
 }
+
+img.left-img,
+img.right-img {
+	display: none;
+}
 /* Onhover */
 
 /* Autoscroll */
@@ -795,11 +802,13 @@ h1.support {
 @media (min-width: 1200px) {
 	body {
 		max-width: 1440px;
+		/* margin: 0 auto; */
 	}
 	.senthead {
 		background: none;
 		height: 5rem;
 		padding: 1rem 1.7rem;
+		/* width: 1440px; */
 	}
 
 	.logo img {
@@ -945,7 +954,9 @@ h1.support {
 		align-items: center;
 		justify-content: space-between;
 		flex-wrap: nowrap;
-		width: 100%;
+		/* width: 100%; */
+		font-size: 120%;
+		padding: 2rem 0;
 	}
 
 	img.hero-p2p {
@@ -955,18 +966,57 @@ h1.support {
 	.section-7 {
 		display: flex;
 		flex-direction: row-reverse;
-		/* width: 1000px !important; */
+		font-size: 120%;
 	}
+
 	img.commerce,
 	img.nft,
 	img.smart,
 	img.exchange {
+		width: auto;
+		margin-right: 2em;
+		max-width: 659px;
+	}
+
+	img.nft{
+		margin: 0;
+	}
+	img.smart{
+		width: 550px;
+	}
+	img.exchange {
+		margin-right: 50px;
+	}
+	
+
+	.p2p-loans,
+	.nft-insur,
+	.smart-1,
+	.commerce,
+	.exchange {
+		padding-left: 2em;
+		font-size: 1.3rem;
+		width: auto;
+		/* max-width: 600px; */
+	}
+
+	.commerce{
+		margin-top: -10rem;
+	}
+
+	.p2p-loans, .nft-insur{
 		max-width: 600px;
-		width: 500px;
+	}
+	.commerce-info, .exchange-info{
+		width: 548px;
+	}
+	.p2{
+		width: 548px;
 	}
 
 	img#comm {
-		margin-left: -3em;
+		margin-right: -5rem;
+		max-width: 698px;
 	}
 
 	.section-2::after,
@@ -976,6 +1026,7 @@ h1.support {
 
 	.section-2::after {
 		margin-top: -3em;
+		bottom: -0.3999999999999986em;
 	}
 
 	img.right-img,
@@ -983,14 +1034,15 @@ h1.support {
 		width: 100px;
 		/* height: 100px; */
 		position: absolute;
+		animation: bounce 9s infinite;
 		transform: rotate(334deg);
 	}
 	img.right-img {
 		right: 70px;
+		transform: rotate(334deg);
 	}
 	img.left-img {
 		left: -50px;
 		bottom: 0;
-		transform: rotate(334deg);
 	}
 }
