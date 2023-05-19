@@ -802,13 +802,13 @@ img.right-img {
 @media (min-width: 1200px) {
 	body {
 		max-width: 1440px;
-		/* margin: 0 auto; */
+		margin: 0 auto;
 	}
 	.senthead {
 		background: none;
 		height: 5rem;
 		padding: 1rem 1.7rem;
-		/* width: 1440px; */
+		width: 1440px;
 	}
 
 	.logo img {
