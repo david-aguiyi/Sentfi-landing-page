@@ -1,7 +1,7 @@
 function scrollFunction() {
 	if (window.innerWidth < 768) {
 		document.getElementById("logo").style.width = "100px";
-		// document.getElementById("navbar").style.padding = "0.75rem 1.5rem";
+		// doc1ument.getElementById("navbar").style.padding = "0.75rem 1.5rem";
 	} else if (
 		document.body.scrollTop > 50 ||
 		document.documentElement.scrollTop > 50
