@@ -43,6 +43,12 @@ header {
 	padding-top: 0.8rem;
 }
 
+@media screen and (width < 430px) {
+	header {
+		padding-top: 1rem;
+	}
+}
+
 .logo {
 	display: block;
 }
@@ -53,6 +59,12 @@ header {
 
 .head-button {
 	padding-right: 1em;
+}
+
+@media screen and (width > 1350px) {
+	.head-button {
+		padding-right: 6em;
+	}
 }
 
 button {
